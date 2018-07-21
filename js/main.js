@@ -26,8 +26,36 @@ newDiv2.appendChild(coolestNewH1)
 
 	var image1 = document.createElement("IMG");
 	image1.id = "Arsenal";
-	image1.src = "https://wallpaper-house.com/data/out/9/wallpaper2you_311043.gif"
+	image1.src = "https://statics.sportskeeda.com/wp-content/uploads/2012/01/vieiraDM0510_468x631-222x300.jpg"
 	newDiv2.appendChild(image1)
+
+	var btn = document.createElement("BUTTON");
+	var t = document.createTextNode("CLICK ME");
+	btn.appendChild(t);
+	newDiv2.appendChild(btn);
+
+	var images = [
+	{
+		path: "https://statics.sportskeeda.com/wp-content/uploads/2012/01/vieiraDM0510_468x631-222x300.jpg",
+		desc: "Vieira the defensive genius"
+	},
+	{
+		path: "https://statics.sportskeeda.com/wp-content/uploads/2013/02/FA-Cup-Final-Arsenal-v-Manchester-United-52962102-1360363884.jpg",
+		desc: "Vieira stops Ronaldo"
+	},
+	{
+		path: "https://cdn.images.dailystar.co.uk/dynamic/58/photos/58000/302058.jpg",
+		desc: "Ozil the pass master"
+    }
+  ]
+
+	function changeImage () {
+		counter++;
+		var image = document.getElementById("Arsenal");
+		image1.src = "https://statics.sportskeeda.com/wp-content/uploads/2012/01/vieiraDM0510_468x631-222x300.jpg"
+		image1.alt = "took a minute, but it got coded"
+	}
+
 
 
 
